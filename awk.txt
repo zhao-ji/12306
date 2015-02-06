@@ -1,0 +1,6 @@
+#!/usr/bin/awk
+# utf8
+
+BEGIN { FS="----"; NUM_PSW = 0 }
+$2 ~ /^[0-9]*$/ { NUM_PSW += 1 }
+END {print NUM_PSW}
